@@ -1,10 +1,14 @@
+import json
 import re
 
 from course import download_course
 from login_session import session_login
 from tools import create_dir, api_call, clean_dir
 
-save_path = "/DIKU"
+with open('config.json') as f:
+    config = json.load(f)
+
+save_path = config["save_location"]
 save_path = re.sub(r'/*$', '/', save_path)
 
 session = session_login()
