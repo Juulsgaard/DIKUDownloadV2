@@ -12,7 +12,7 @@ def create_dir(path):
 
 
 def clean_dir(dir_name):
-    dir_name = dir_name.replace(':', ' -').replace('/', '-')
+    dir_name = dir_name.replace(':', ' -').replace('/', '-').replace('...', '').strip()
     return re.sub(r'/*$', '/', dir_name)
 
 
@@ -20,7 +20,8 @@ def clean_file(file_name):
     return file_name\
         .replace(':', ' -')\
         .replace('/', '-')\
-        .replace('...', '')
+        .replace('...', '')\
+        .strip()
 
 
 def api_call(call, session):

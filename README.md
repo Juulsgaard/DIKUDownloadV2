@@ -1,5 +1,10 @@
 # DIKU Download
-All you need to do is enter you username and password in the config file.
-You can also specify the download location
 
-When config is filled out, run the main.py file
+Run the program:
+
+```> python3 main.py```
+
+The program will prompt you for username, password, and a save location.
+
+Use your 6 character login for Absalon. The save location is a folder where
+all your courses will be saved.
