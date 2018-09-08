@@ -11,8 +11,8 @@ cal_url = "https://personligtskema.ku.dk/ical.asp?objectclass=student&id=%s" % u
 cal_file = urllib.request.urlopen(cal_url)
 
 events = icalendar.Calendar.from_ical(cal_file.read())
-# now = datetime.now(tz=pytz.timezone("Europe/Copenhagen"))
-now = datetime(2018, 9, 7, 7, 15, 0, 0, timezone.utc)
+now = datetime.now(tz=pytz.timezone("Europe/Copenhagen"))
+# now = datetime(2018, 9, 7, 7, 15, 0, 0, timezone.utc)
 
 current_class = None
 next_class = None
@@ -32,7 +32,18 @@ for event in events.walk("vevent"):
         break
 
 
-def print_class(cal_event):
+def print_var(prefix, var_name, value):
+    print("%s%s=%s" % (prefix, var_name, value))
+
+
+def print_class(cal_event, prefix):
+
+    if cal_event is None:
+        print_var("Show", prefix, 0)
+        return
+
+    print_var("Show", prefix, 1)
+
     title = re.sub(r'^.+;', '', cal_event["SUMMARY"])
     title_g = re.search(r' ?- ?(\w+) ?$', title)
     class_type = title_g.group(1)
@@ -42,29 +53,30 @@ def print_class(cal_event):
     end = cal_event['DTEND'].dt
     duration = end - start
 
-    print(title)
-    print("Type: %s" % class_type)
-    print("Tid: %i timer" % math.ceil(duration.seconds / 3600))
+    print_var(prefix, "Title", title)
+    print_var(prefix, "Type", class_type)
+    print_var(prefix, "Duration", math.ceil(duration.seconds / 3600))
 
     if start < now:
-        print("Tid tilbage: %s" % (end - now))
+        print_var(prefix, "Remainder", str(end - now))
     else:
-        print("Tid før start: %s" % str((start + timedelta(minutes=15)) - now))
+        print_var(prefix, "Countdown", str((start + timedelta(minutes=15)) - now))
 
     description = cal_event["DESCRIPTION"]
 
     room_g = re.search(r'Room: (.+?)\. ?\n', description)
     if room_g:
         room = room_g.group(1)
-        print("Lokale: %s" % room)
+        print_var(prefix, "Room", room.split(":")[0])
 
     prof_g = re.search(r'Staff: (.+?)\. ?\n', description)
     if prof_g:
         prof = prof_g.group(1).strip().split(",")
         prof = " ".join(list(reversed(prof))).strip()
-        print("Underviser: %s" % prof)
+        print_var(prefix, "Professor", prof)
 
 
-print_class(current_class)
+print("[Variables]")
+print_class(current_class, "Current")
 print()
-print_class(next_class)
+print_class(next_class, "Next")
