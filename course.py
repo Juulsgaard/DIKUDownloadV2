@@ -16,7 +16,7 @@ def download_course(course_id, base_path, session):
     for announcement in announcements:
         time = announcement["posted_at"][:10]
         name = "%s %s.html" % (time, announcement["title"])
-        file_path = announcement_path + name
+        file_path = announcement_path + clean_file(name)
         if os.path.isfile(file_path):
             continue
         file = open(file_path, "w")

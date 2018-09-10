@@ -21,6 +21,8 @@ def clean_file(file_name):
         .replace(':', ' -')\
         .replace('/', '-')\
         .replace('...', '')\
+        .replace('<', '')\
+        .replace('>', '')\
         .strip()
 
 

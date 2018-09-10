@@ -1,9 +1,10 @@
-import urllib.request
-import icalendar
-from datetime import datetime, timezone, timedelta
-import pytz
 import math
 import re
+import urllib.request
+from datetime import datetime, timedelta, timezone
+
+import icalendar
+import pytz
 
 username = "xcn534"
 
@@ -58,9 +59,9 @@ def print_class(cal_event, prefix):
     print_var(prefix, "Duration", math.ceil(duration.seconds / 3600))
 
     if start < now:
-        print_var(prefix, "Remainder", str(end - now))
+        print_var(prefix, "Remainder", str(end - now)[:7])
     else:
-        print_var(prefix, "Countdown", str((start + timedelta(minutes=15)) - now))
+        print_var(prefix, "Countdown", str((start + timedelta(minutes=15)) - now)[:7])
 
     description = cal_event["DESCRIPTION"]
 
