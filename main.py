@@ -2,9 +2,9 @@ import json
 import os
 import re
 
-from course import download_course
-from login_session import session_login
-from tools import create_dir, api_call, clean_dir
+from lib.course import Course
+from lib.canvas_session import CanvasSession
+from lib.tools import create_dir, clean_dir
 
 config = {}
 if os.path.isfile("config.json"):
@@ -34,9 +34,9 @@ if config_changed:
     conf_file.close()
 
 save_path = config["save_location"]
-save_path = re.sub(r'/*$', '/', save_path)
+save_path = re.sub(r'(?:\\|/*$)', '/', save_path)
 
-session = session_login()
+session = CanvasSession(username=config["username"], password=config["password"])
 
 course_names = {
     "Diskret matematik og algoritmer": "DMA",
@@ -45,7 +45,7 @@ course_names = {
 
 create_dir(save_path)
 
-courses = api_call("courses", session)
+courses = session.api_call("courses")
 
 for course in courses:
     course_name = course["name"]
@@ -56,5 +56,5 @@ for course in courses:
 
     new_path = save_path + clean_dir(course_name)
     create_dir(new_path)
+    Course(course_id=course["id"], path=new_path, session=session).download()
 
-    download_course(course["id"], new_path, session)
