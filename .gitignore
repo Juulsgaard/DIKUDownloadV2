@@ -1,3 +1,11 @@
-/venv/*
-/__pycache__/*
+__pycache__/*
 config.json
+diku_server/build
+diku_server/diku_server.egg-info
+diku_server/dist
+diku_tools/build
+diku_tools/diku_tools.egg-info
+diku_tools/dist
+.idea
+diku_server/build.bat
+diku_tools/build.bat

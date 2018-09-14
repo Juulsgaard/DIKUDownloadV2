@@ -2,7 +2,7 @@ import json
 
 from flask import Blueprint
 
-from lib.calendar import Calendar
+from diku_tools.calendars import Calendar
 from ..tools import get_user
 
 bp = Blueprint('calendar', __name__)

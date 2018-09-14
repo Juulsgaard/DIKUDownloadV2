@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7304ea4e-fb84-4567-991b-762d8fdeb142" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_server.wsgi" beforeDir="false" afterPath="$PROJECT_DIR$/start_server.wsgi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_server/diku_server/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_server/diku_server/endpoints/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_server/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_tools/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_tools/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_tools/diku_tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diku_tools/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DIKUDownloadV2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_server/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_tools/diku_tools/calendars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/canvas_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_tools/diku_tools/canvas_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_tools/diku_tools/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_tools/diku_tools/encryption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_tools/diku_tools/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/endpoints/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_server/diku_server/endpoints/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/endpoints/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_server/diku_server/endpoints/calendars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/diku_server/diku_server/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_server.wsgi" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,59 +39,68 @@
     <SUITE FILE_PATH="coverage/DIKUDownloadV2$Unnamed.coverage" NAME="Server Coverage Results" MODIFIED="1536872257574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DIKUDownloadV2$Server.coverage" NAME="Server Coverage Results" MODIFIED="1536932380320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DIKUDownloadV2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1536309265634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DIKUDownloadV2$Flask__start_server_py_.coverage" NAME="Flask (start_server.py) Coverage Results" MODIFIED="1536933453669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/DIKUDownloadV2$Flask__start_server_py_.coverage" NAME="Flask (diku_server/__init__.py) Coverage Results" MODIFIED="1536949076985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DIKUDownloadV2$Calendar.coverage" NAME="Calendar Coverage Results" MODIFIED="1536853627669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2017018675">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="6" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="LICENSE" value="2" />
+          <entry key="bat" value="2" />
           <entry key="bp" value="2" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="4" />
           <entry key="json" value="4" />
-          <entry key="md" value="1" />
-          <entry key="py" value="44" />
+          <entry key="md" value="3" />
+          <entry key="py" value="60" />
+          <entry key="sh" value="1" />
           <entry key="txt" value="5" />
           <entry key="wsgi" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Bash" value="1" />
+          <entry key="Bat" value="2" />
           <entry key="JSON" value="4" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="46" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="LICENSE" value="33" />
+          <entry key="bat" value="380" />
           <entry key="bp" value="28" />
-          <entry key="dummy" value="58" />
-          <entry key="gitignore" value="36" />
+          <entry key="dummy" value="66" />
+          <entry key="gitignore" value="128" />
           <entry key="json" value="105" />
           <entry key="md" value="249" />
-          <entry key="py" value="9358" />
+          <entry key="py" value="9655" />
           <entry key="txt" value="312" />
-          <entry key="wsgi" value="53" />
+          <entry key="wsgi" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Bat" value="316" />
           <entry key="JSON" value="105" />
           <entry key="Markdown" value="249" />
-          <entry key="PLAIN_TEXT" value="413" />
-          <entry key="Python" value="9432" />
+          <entry key="PLAIN_TEXT" value="610" />
+          <entry key="Python" value="9739" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -79,33 +112,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/start_server.wsgi">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1536947120835" expanded="true" signature="129:132" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/endpoints/authentication.py">
+        <entry file="file://$PROJECT_DIR$/diku_server/diku_server/tools.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -114,26 +125,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/calendar.py">
+        <entry file="file://$PROJECT_DIR$/diku_server/diku_server/endpoints/authentication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diku_server/diku_server/endpoints/calendars.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diku_server/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diku_server/build.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diku_tools/build.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diku_server/diku_server/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <marker date="1536932971890" expanded="true" signature="138:140" ph="..." />
-                <marker date="1536932971890" expanded="true" signature="156:1901" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/endpoints/calendar.py">
+        <entry file="file://$PROJECT_DIR$/diku_tools/setup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -151,10 +221,12 @@
     <findStrings>
       <find>\</find>
       <find>...lib</find>
+      <find>diku_server</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
       <replace />
+      <replace>dike_tools</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +242,6 @@
       <list>
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/calendar.py" />
         <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/course.py" />
@@ -188,17 +259,35 @@
         <option value="$PROJECT_DIR$/server/server.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/server/server.wsgi" />
-        <option value="$PROJECT_DIR$/lib/__init__.py" />
         <option value="$PROJECT_DIR$/server/endpoints/__init__.py" />
         <option value="$PROJECT_DIR$/server.py" />
-        <option value="$PROJECT_DIR$/server/__init__.py" />
         <option value="$PROJECT_DIR$/lib/course.py" />
         <option value="$PROJECT_DIR$/server/endpoints/authentication.py" />
         <option value="$PROJECT_DIR$/server/tools.py" />
         <option value="$PROJECT_DIR$/lib/calendar.py" />
         <option value="$PROJECT_DIR$/server/endpoints/calendar.py" />
-        <option value="$PROJECT_DIR$/start_server.py" />
         <option value="$PROJECT_DIR$/start_server.wsgi" />
+        <option value="$PROJECT_DIR$/lib/__init__.py" />
+        <option value="$PROJECT_DIR$/server/__init__.py" />
+        <option value="$PROJECT_DIR$/start_server.py" />
+        <option value="$PROJECT_DIR$/diku-server/__init__.py" />
+        <option value="$PROJECT_DIR$/diku-server/endpoints/authentication.py" />
+        <option value="$PROJECT_DIR$/diku_server/endpoints/calendar.py" />
+        <option value="$PROJECT_DIR$/diku_server/endpoints/authentication.py" />
+        <option value="$PROJECT_DIR$/diku_server/tools.py" />
+        <option value="$PROJECT_DIR$/diku_server/LICENSE" />
+        <option value="$PROJECT_DIR$/diku_server/__init__.py" />
+        <option value="$PROJECT_DIR$/diku_tools/__init__.py" />
+        <option value="$PROJECT_DIR$/diku_tools/diku_tools/__init__.py" />
+        <option value="$PROJECT_DIR$/diku_server/diku_server/tools.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/diku_server/diku_server/endpoints/authentication.py" />
+        <option value="$PROJECT_DIR$/diku_server/diku_server/endpoints/calendars.py" />
+        <option value="$PROJECT_DIR$/diku_tools/build.bat" />
+        <option value="$PROJECT_DIR$/diku_server/build.bat" />
+        <option value="$PROJECT_DIR$/diku_tools/setup.py" />
+        <option value="$PROJECT_DIR$/diku_server/diku_server/__init__.py" />
+        <option value="$PROJECT_DIR$/diku_server/setup.py" />
       </list>
     </option>
   </component>
@@ -263,12 +352,18 @@
             <path>
               <item name="DIKUDownloadV2" type="b2602c69:ProjectViewProjectNode" />
               <item name="DIKUDownloadV2" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="diku_server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DIKUDownloadV2" type="b2602c69:ProjectViewProjectNode" />
               <item name="DIKUDownloadV2" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="diku_server" type="462c0819:PsiDirectoryNode" />
+              <item name="diku_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DIKUDownloadV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DIKUDownloadV2" type="462c0819:PsiDirectoryNode" />
+              <item name="diku_tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,14 +374,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/tools.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/diku_server/__init__.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2\diku_tools\diku_tools" />
+      <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2\diku_server\diku_server" />
       <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2" />
       <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2\server" />
       <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\frede\PycharmProjects\DIKUDownloadV2\diku_tools" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,7 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (start_server.wsgi)">
+  <component name="RunManager" selected="Flask server.Server">
     <configuration name="Calendar" type="PythonConfigurationType" factoryName="Python">
       <module name="DIKUDownloadV2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,9 +424,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (start_server.wsgi)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
       <module name="DIKUDownloadV2" />
-      <option name="target" value="$PROJECT_DIR$/start_server.wsgi" />
+      <option name="target" value="$PROJECT_DIR$/diku_server/__init__.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,7 +445,7 @@
       <option name="additionalOptions" value="" />
       <option name="application" value="" />
       <module name="DIKUDownloadV2" />
-      <option name="target" value="$PROJECT_DIR$/start_server.wsgi" />
+      <option name="target" value="$PROJECT_DIR$/start_server.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,13 +461,8 @@
     <list>
       <item itemvalue="Flask server.Server" />
       <item itemvalue="Python.Calendar" />
-      <item itemvalue="Flask server.Flask (start_server.wsgi)" />
+      <item itemvalue="Flask server.Flask" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flask server.Flask (start_server.wsgi)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -532,14 +629,27 @@
       <option name="project" value="LOCAL" />
       <updated>1536946930258</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="setting up WSGI">
+      <created>1536947127811</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536947127811</updated>
+    </task>
+    <task id="LOCAL-00024" summary="setting up WSGI">
+      <created>1536947214299</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536947214299</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1633" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14031745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22412698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -594,13 +704,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/calendar.py" />
     <entry file="file://$PROJECT_DIR$/classes.txt" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -615,9 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,19 +735,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/endpoints/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/canvas_session.py">
+    <entry file="file://$PROJECT_DIR$/server/endpoints/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/canvas_session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
@@ -659,17 +749,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/course.py">
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/course.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <marker date="1536932971868" expanded="true" signature="157:325" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/encryption.py">
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/encryption.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
@@ -679,36 +766,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tools.py">
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/endpoints/authentication.py">
+    <entry file="file://$PROJECT_DIR$/diku-server/main.py" />
+    <entry file="file://$PROJECT_DIR$/start_server.py" />
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/calendars.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calendar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="-102">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
             <marker date="1536932971890" expanded="true" signature="138:140" ph="..." />
@@ -717,24 +786,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/endpoints/calendar.py">
+    <entry file="file://$PROJECT_DIR$/diku_server/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_tools/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_tools/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/diku_tools/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/diku_tools/diku_tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/diku_server/endpoints/calendars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/diku_server/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_server.wsgi">
+    <entry file="file://$PROJECT_DIR$/diku_server/diku_server/endpoints/authentication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_tools/build.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/build.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_tools/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/diku_server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1536947120835" expanded="true" signature="129:132" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diku_server/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
