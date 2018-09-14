@@ -4,6 +4,10 @@ from server.endpoints.authentication import bp as auth
 from server.endpoints.calendar import bp as cal
 
 
+def application():
+    return "Hello my world"
+
+
 def create_app():
     app = Flask(__name__)
 
@@ -17,6 +21,6 @@ def create_app():
     return app
 
 
-app = create_app()
-if __name__ == "__main__":
-    app.run()
+# app = create_app()
+# if __name__ == "__main__":
+#     app.run()
