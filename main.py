@@ -2,9 +2,9 @@ import json
 import os
 import re
 
-from lib.course import Course
-from lib.canvas_session import CanvasSession
-from lib.tools import create_dir, clean_dir
+from diku_tools.course import Course
+from diku_tools.canvas_session import CanvasSession
+from diku_tools.tools import create_dir, clean_dir
 
 config = {}
 if os.path.isfile("config.json"):
