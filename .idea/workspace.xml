@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7304ea4e-fb84-4567-991b-762d8fdeb142" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_server.wsgi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_server.wsgi" beforeDir="false" afterPath="$PROJECT_DIR$/start_server.wsgi" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,16 +58,16 @@
           <entry key="json" value="105" />
           <entry key="md" value="249" />
           <entry key="py" value="9358" />
-          <entry key="txt" value="297" />
-          <entry key="wsgi" value="50" />
+          <entry key="txt" value="312" />
+          <entry key="wsgi" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="105" />
           <entry key="Markdown" value="249" />
-          <entry key="PLAIN_TEXT" value="398" />
-          <entry key="Python" value="9429" />
+          <entry key="PLAIN_TEXT" value="413" />
+          <entry key="Python" value="9430" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -82,10 +82,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start_server.wsgi">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="408">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <marker date="1536943294357" expanded="true" signature="148:179" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1536944642656" expanded="true" signature="407:410" ph="..." />
               </folding>
             </state>
           </provider>
@@ -484,7 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536933806765</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="setting up WSGI">
+      <created>1536943309461</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536943309461</updated>
+    </task>
+    <task id="LOCAL-00018" summary="setting up WSGI">
+      <created>1536943684997</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536943684997</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,7 +548,8 @@
     <MESSAGE value="added package" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="minor import changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor import changes" />
+    <MESSAGE value="setting up WSGI" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up WSGI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config.json">
@@ -680,10 +696,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start_server.wsgi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="408">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <marker date="1536943294357" expanded="true" signature="148:179" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1536944642656" expanded="true" signature="407:410" ph="..." />
           </folding>
         </state>
       </provider>
