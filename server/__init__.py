@@ -3,9 +3,8 @@ from flask import Flask
 from .endpoints.authentication import bp as auth
 from .endpoints.calendar import bp as cal
 
-import os
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append("..")
 
 
 def create_app():
