@@ -82,11 +82,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start_server.wsgi">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="170">
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1536944642656" expanded="true" signature="407:410" ph="..." />
+                <marker date="1536944944706" expanded="true" signature="414:417" ph="..." />
               </folding>
             </state>
           </provider>
@@ -499,7 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536943684997</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="setting up WSGI">
+      <created>1536944648664</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536944648664</updated>
+    </task>
+    <task id="LOCAL-00020" summary="setting up WSGI">
+      <created>1536944873425</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536944873425</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -696,11 +709,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start_server.wsgi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1536944642656" expanded="true" signature="407:410" ph="..." />
+            <marker date="1536944944706" expanded="true" signature="414:417" ph="..." />
           </folding>
         </state>
       </provider>
