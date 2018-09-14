@@ -44,6 +44,26 @@ class Calendar:
             self.load_current_next(now)
         return self.next_event
 
+    def get_day(self, year: int, month: int, day: int):
+        events = []
+        for event in self.events.walk("vevent"):
+            start = event['DTSTART'].dt
+            if start.year < year or start.month < month or start.day < day:
+                continue
+
+            end = event['DTEND'].dt
+            if end.year > year:
+                break
+            if end.year == year:
+                if end.month > month:
+                    break
+                if end.month == month:
+                    if end.day > day:
+                        break
+
+            events.append(LectureEvent(event))
+        return events
+
 
 class CalendarEvent:
 
@@ -66,7 +86,8 @@ class CalendarEvent:
 class LectureEvent(CalendarEvent):
 
     def get_title(self):
-        return re.sub(r' ?- ?\w+ ?$', '', self.title)
+        title = self.title.split(";")
+        return re.sub(r' ?- ?\w+ ?$', '', title[min(1, len(title))])
 
     def get_type(self):
         return re.search(r' ?- ?(\w+) ?$', self.title).group(1)
@@ -77,7 +98,17 @@ class LectureEvent(CalendarEvent):
 
     def get_prof(self):
         prof_match = re.search(r'Staff: (.+?)\. ?\n', self.description)
-        if prof_match:
+        if not prof_match:
             return "N/A"
         prof = prof_match.group(1).strip().split(",")
         return " ".join(list(reversed(prof))).strip()
+
+    def to_dict(self):
+        return {
+            "title": self.get_title(),
+            "type": self.get_type(),
+            "room": self.get_room(),
+            "professor": self.get_prof(),
+            "start": self.start.hour,
+            "duration": self.get_duration()
+        }
