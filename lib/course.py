@@ -2,8 +2,8 @@ import os
 
 import lxml.html
 
-from lib.canvas_session import CanvasSession
-from lib.tools import create_dir, clean_dir, clean_file, create_shortcut
+from .canvas_session import CanvasSession
+from .tools import create_dir, clean_dir, clean_file, create_shortcut
 
 
 class Course:

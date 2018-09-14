@@ -4,7 +4,7 @@ import urllib.request
 from datetime import datetime, timedelta
 
 import icalendar
-from lib.tools import timedelta_string
+from .tools import timedelta_string
 
 
 class Calendar:

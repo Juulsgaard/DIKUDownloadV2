@@ -1,10 +1,7 @@
 from flask import Flask
 
-from .endpoints.authentication import bp as auth
-from .endpoints.calendar import bp as cal
-
-import sys
-sys.path.append("..")
+from .server.endpoints.authentication import bp as auth
+from .server.endpoints.calendar import bp as cal
 
 
 def create_app():

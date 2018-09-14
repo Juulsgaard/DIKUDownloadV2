@@ -1,8 +1,8 @@
 import jwt
 from flask import request
 
-from lib.canvas_session import CanvasSession
-from lib.encryption import AESCipher
+from ..lib.canvas_session import CanvasSession
+from ..lib.encryption import AESCipher
 
 jwt_secret = "Not very secret"
 login_secret = "Not very secret!"
