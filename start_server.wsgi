@@ -1,33 +1,22 @@
-# from flask import Flask
-#
-# from server.endpoints.authentication import bp as auth
-# from server.endpoints.calendar import bp as cal
+from flask import Flask
+
+from server.endpoints.authentication import bp as auth
+from server.endpoints.calendar import bp as cal
 
 
-def application(environ, start_response):
-    status = '200 OK'
-    output = b'Hello World!'
+def create_app():
+    app = Flask(__name__)
 
-    response_headers = [('Content-type', 'text/plain'),
-                        ('Content-Length', str(len(output)))]
-    start_response(status, response_headers)
+    app.register_blueprint(auth)
+    app.register_blueprint(cal)
 
-    return [output]
+    @app.route("/test", methods=["POST"])
+    def test():
+        return "success"
 
-
-# def create_app():
-#     app = Flask(__name__)
-#
-#     app.register_blueprint(auth)
-#     app.register_blueprint(cal)
-#
-#     @app.route("/test", methods=["POST"])
-#     def test():
-#         return "success"
-#
-#     return app
+    return app
 
 
-# app = create_app()
-# if __name__ == "__main__":
-#     app.run()
+application = create_app()
+if __name__ == "__main__":
+    application.run()
