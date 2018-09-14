@@ -1,8 +1,8 @@
 import jwt
 from flask import Blueprint, request
 
-from ...lib.canvas_session import CanvasSession
-from ...lib.encryption import AESCipher
+from lib.canvas_session import CanvasSession
+from lib.encryption import AESCipher
 from ..tools import login_secret, jwt_secret
 
 bp = Blueprint('authentication', __name__)

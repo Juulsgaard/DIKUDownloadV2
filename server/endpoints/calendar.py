@@ -2,7 +2,7 @@ import json
 
 from flask import Blueprint
 
-from ...lib.calendar import Calendar
+from lib.calendar import Calendar
 from ..tools import get_user
 
 bp = Blueprint('calendar', __name__)
