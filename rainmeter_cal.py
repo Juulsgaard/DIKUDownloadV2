@@ -2,7 +2,7 @@ from datetime import datetime
 
 import pytz
 
-from lib.calendar import LectureEvent, Calendar
+from diku_tools.calendars import LectureEvent, Calendar
 
 now = datetime.now(tz=pytz.timezone("Europe/Copenhagen"))
 # now = datetime(2018, 9, 13, 7, 15, 0, 0)
