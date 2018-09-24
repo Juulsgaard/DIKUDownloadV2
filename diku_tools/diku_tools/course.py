@@ -54,10 +54,12 @@ class Course:
         folders = self.session.api_call("folders/%i/folders" % folder_id)
 
         for file in files:
-            self.session.download_file(path + clean_file(file["display_name"]), file["url"])
+            if "id" in file:
+                self.session.download_file(path + clean_file(file["display_name"]), file["url"])
 
         for folder in folders:
-            self.get_course_files(folder["id"], path + clean_dir(folder["name"]))
+            if "id" in folder:
+                self.get_course_files(folder["id"], path + clean_dir(folder["name"]))
 
     def get_modules(self, modules):
         path = self.path + "#MODULES/"
