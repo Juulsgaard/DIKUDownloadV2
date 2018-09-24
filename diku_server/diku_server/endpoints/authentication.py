@@ -1,8 +1,9 @@
-import jwt
-from flask import Blueprint, request
+import json
 
+import jwt
 from diku_tools.canvas_session import CanvasSession
 from diku_tools.encryption import AESCipher
+from flask import Blueprint, request
 
 from ..tools import login_secret, jwt_secret
 
@@ -27,4 +28,4 @@ def login():
 
     jwt_token = jwt.encode({"usr": username_enc, "psw": password_enc, "tkn": token}, jwt_secret)
 
-    return jwt_token
+    return json.dumps(jwt_token.decode("utf-8"))

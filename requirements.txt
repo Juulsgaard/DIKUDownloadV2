@@ -7,3 +7,6 @@ lxml
 requests
 diku_server
 diku_tools
+setuptools
+wheel
+twine

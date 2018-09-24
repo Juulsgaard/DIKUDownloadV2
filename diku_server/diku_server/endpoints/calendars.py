@@ -1,5 +1,7 @@
+from datetime import datetime
 import json
 
+import pytz
 from flask import Blueprint
 
 from diku_tools.calendars import Calendar
@@ -12,7 +14,8 @@ bp = Blueprint('calendar', __name__)
 def calendar_today():
     user = get_user()
     calendar = Calendar(user["username"])
-    today = calendar.get_day(2018, 9, 13)
+    now = datetime.now(tz=pytz.timezone("Europe/Copenhagen"))
+    today = calendar.get_day(now.year, now.month, now.day)
     events = []
     for event in today:
         events.append(event.to_dict())
