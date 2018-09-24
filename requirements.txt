@@ -7,6 +7,6 @@ lxml
 requests
 diku_server
 diku_tools
-setuptools
+setuptools=1.0.2^
 wheel
 twine

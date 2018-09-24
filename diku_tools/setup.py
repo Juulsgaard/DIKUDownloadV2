@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="diku_tools",
-    version="1.0.1",
+    version="1.0.2",
     author="Juulsgaard",
     author_email="frederikjs1@hotmail.com",
     description="Python tools for DIKU related apps",
